@@ -1,0 +1,10 @@
+<ul>
+<% for tweet in @tweets: %>
+  <li>
+    <%- tweet.get('avatar') %>
+    <%- tweet.get('join') %>
+    <%- tweet.get('text') %>
+    <%- tweet.get('time') %>
+  </li>
+<% end %>
+</ul>

@@ -1,6 +1,6 @@
 class exports.MainRouter extends Backbone.Router
   routes :
-    "home": "home"
+    "": "tweet"
 
-  home: ->
-    app.views.home.render()
+  tweet: ->
+    app.views.tweet.render()
