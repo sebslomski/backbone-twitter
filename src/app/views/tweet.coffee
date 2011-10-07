@@ -6,7 +6,7 @@ class exports.TweetView extends Backbone.View
   initialize: ->
     app.collections.tweets.bind('add', @render)
 
-  render: ->
+  render: =>
     $('body').html(
       $(@el).html(tweetTemplate(
         tweets: app.collections.tweets.models
